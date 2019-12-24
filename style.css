@@ -30,27 +30,46 @@
     }
 
     .main-container {
-        margin: 24px;
+        margin: 0px 24px 0px 24px;
         display: flex;
     }
 
     .side-nav {
-        flex-grow: 1;
-        width: 100px;
+        flex-shrink: 1;
+        width: 280px;
+        overflow-y: scroll;
+        height: 100vh;
+        position: fixed;
+        z-index: 10;
     }
+
 
 
     .main-news-section {
         flex-grow: 2;
         width: 100px;
+        z-index: 10;
+        margin-left: 280px;
+       
+    }
+
+    .adjust-border{
+        margin: 20px;
+        border: 1px solid rgb(187, 184, 184);
+        border-radius: 8px ;
+        
     }
 
     .right-side {
-        flex-grow: 1;
+        margin-top: 36px;
+        flex-grow: 1;     
         width: 100px;
+        padding-top: 6px;
     }
 
     .weather {
+        width: 320px;
+        float: right;
         padding: 16px;
         border: 1px solid rgb(187, 187, 187);
         border-radius: 8px;
@@ -118,12 +137,11 @@
 
     .temp-value {
         flex: 2;
-        outline: 2px solid yellow;
+ 
     }
 
     .weather-icon img{
-        flex: 1;
-        outline: 2px solid yellow;
+        flex: 1;;
         align-content: flex-end;
     }
     
